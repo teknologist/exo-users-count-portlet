@@ -1,0 +1,29 @@
+{
+  "name": "users-count-portlet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "mkdir -p target/static && cp -R src/static/* target/static/ && cp -R src/main/webapp/css target/static/",
+    "release-debug": "export NODE_ENV= && webpack",
+    "release": "export NODE_ENV=production && webpack -p",
+    "watch": "npm run copy && node node_modules/webpack/bin/webpack.js --progress --colors --watch -d",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.15.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "express": "^4.14.0",
+    "webpack": "^1.13.2"
+  }
+}

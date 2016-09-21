@@ -1,0 +1,18 @@
+version: '2'
+services:
+  exo:
+    image: "exoplatform/exo-trial:latest"
+    container_name: "myexo"
+    environment:
+      - EXO_ADDONS_LIST="users-count-portlet:1.0.0"
+      - EXO_ADDONS_CATALOG_URL="file:///etc/exo/catalog.json"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./catalog.json:/etc/exo/catalog.json:ro
+      - ./users-count-portlet.zip:/etc/exo/users-count-portlet.zip:ro
+      - srv:/srv
+volumes:
+  srv:
+    external:
+      name: plf_test

@@ -1,0 +1,14 @@
+[
+{
+"activity": "online",
+"lastActivityDate": "2016-09-21T12:31:40.014+0200",
+"userId": "user1",
+"status": "available"
+},
+{
+"activity": "online",
+"lastActivityDate": "2016-09-21T12:32:23.978+0200",
+"userId": "user2",
+"status": "available"
+}
+]

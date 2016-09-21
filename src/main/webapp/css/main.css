@@ -1,0 +1,26 @@
+.usersCountContainer {
+  text-align:center;
+  height:100%;
+  font-weight: light;
+  ￼font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 30px;
+  border-radius: 3px;
+background: #fff;
+border: 0;
+-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+margin: 0 0 25px;
+}
+
+.usersCount {
+    margin: auto;
+}
+
+.count {
+  font-size:48px;
+  font-weight:lighter;
+}
+.count-label {
+  font-size: 12px;
+}

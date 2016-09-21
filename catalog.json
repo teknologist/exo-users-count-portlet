@@ -1,0 +1,16 @@
+[
+  {
+    "id": "users-count-portlet",
+    "version": "1.0.0",
+    "unstable": true,
+    "name": "Users Count Portlet",
+    "downloadUrl": "file:///etc/exo/users-count-portlet.zip",
+    "vendor": "test",
+    "license": "LGPLv3",
+    "licenseUrl": "https://www.gnu.org/licenses/lgpl-3.0.txt",
+    "mustAcceptLicense": false,
+    "supportedDistributions": "community",
+    "supportedApplicationServers": "tomcat,jboss",
+    "compatibility": "[4.3.0,)"
+  }
+]
