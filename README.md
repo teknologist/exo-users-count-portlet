@@ -1,5 +1,4 @@
-
-![Users Count Portlet](https://github.com/teknologist/exo-users-count-portlet/blob/master/usersCount.png "Users Count Portlet")
+![Users Count Portlet](https://github.com/teknologist/exo-users-count-portlet/blob/master/usersCount.png?raw=true "Users Count Portlet")
 
 The portlet show current online users count. It is refreshed every 5 seconds and updates automatically.
 
