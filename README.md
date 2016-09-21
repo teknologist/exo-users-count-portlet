@@ -40,7 +40,7 @@ mvn clean install -Pproduction
 * deployment
  * either deploy the target/react-portlet.zip as EXO ADDON :
 ```
-${EXO_APP_DIR}/addon install --catalog=file://catalog.json react-portlet:1.0.0 --force --batch-mode
+${EXO_APP_DIR}/addon install --catalog=file://catalog.json users-count-portlet:1.0.0 --force --batch-mode
 ```
 
  * or copy the target/react-portlet.war into EXO webapps dir
