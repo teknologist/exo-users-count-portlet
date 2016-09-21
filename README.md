@@ -1,7 +1,7 @@
 
 ![Users Count Portlet](https://github.com/teknologist/exo-users-count-portlet/blob/master/usersCount.png "Users Count Portlet")
 
-The portlet show online users count. It is refreshed every 5 seconds and updates automatically.
+The portlet show current online users count. It is refreshed every 5 seconds and updates automatically.
 
 ### Used this excellent sample as the boilerplate:
 * https://gpicavet.github.io/jekyll/update/2016/09/17/getting-started-exo-reactjs.html
