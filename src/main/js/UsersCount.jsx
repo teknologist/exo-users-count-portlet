@@ -12,26 +12,34 @@ class UsersCount extends React.Component {
   componentDidMount() {
     this.fetch();
     setInterval(function() {
-        this.fetch();
+      this.fetch();
     }.bind(this), 5000);
   }
 
   fetch() {
     fetch("/rest/state/status",
-      {credentials: 'include'})
+    {credentials: 'include'})
     .then((res) => {
-        return res.json();
-      })
+      return res.json();
+    })
     .then((json) => {
-       this.setState({usersOnline: json});
+      this.setState({usersOnline: json});
     })
   }
 
   render() {
     var usersCount = this.state.usersOnline.length;
-    return (<div className="usersCountContainer"><div className="usersCount"><div className="count">{usersCount}</div><br/><div className="count-label">Online Users</div></div></div>);
+    return (<div className="usersCountContainer">
+    <a href="/portal/intranet/usersonline">
+    <div className="usersCount">
+    <div className="count">{usersCount}</div>
+    <br/>
+    <div className="count-label">Online Users</div>
+    </div>
+    </a>
+    </div>);
   }
 
 }
 
-ReactDOM.render(<UsersCount />, document.getElementById('app'));
+ReactDOM.render(<UsersCount />, document.getElementById('usercountapp'));
