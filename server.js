@@ -1,3 +1,4 @@
+//@flow
 var express    = require('express');        // call express
 var app        = express();                 // define our app using express
 var port       = 3000;  			      // set our port
