@@ -1,6 +1,7 @@
 //@flow
 import React from 'react';
 import ReactDOM from 'react-dom';
+import _ from 'lodash';
 
 class UsersCount extends React.Component {
 
@@ -23,7 +24,7 @@ class UsersCount extends React.Component {
       return res.json();
     })
     .then((json) => {
-      this.setState({usersOnline: json});
+      this.setState({usersOnline: _.filter(json, (item) => {  return item.userId.indexOf('mypharma.vie') === -1})});
     })
   }
 
